@@ -14,9 +14,9 @@
       <shadows>false</shadows>
     </scene>
 
-    <gui fullscreen='0'>
-      <camera name='user_camera'>
-        <pose frame=''>2.5 2.5 16.5 0 1.570796 1.570796</pose>
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        <pose frame="">2.5 2.5 16.5 0 1.570796 1.570796</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

@@ -3,7 +3,7 @@
 <package format="3">
   <name>point_cloud_registration</name>
   <version>0.0.0</version>
-  <description>This package uses a Turtlebot3 robot with an Intel Realsense D435i depth camera and tries to create point clouds of Gazebo environments.</description>
+  <description>This package uses a TurtleBot3 robot with an Intel Realsense D435i depth camera and tries to create point clouds of Gazebo environments.</description>
   <maintainer email="m.banov7@gmail.com">Marina-Banov</maintainer>
   <license>TODO: License declaration</license>
 

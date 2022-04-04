@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<sdf version='1.7'>
-  <world name='default'>
+<sdf version="1.7">
+  <world name="default">
 
     <include>
       <uri>model://ground_plane</uri>
@@ -14,15 +14,15 @@
       <shadows>false</shadows>
     </scene>
 
-    <gui fullscreen='0'>
-      <camera name='user_camera'>
+    <gui fullscreen="0">
+      <camera name="user_camera">
         <pose>2.42178 -4.92076 31.3393 0 1.5138 0.009599</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
 
-    <physics type='ode'>
+    <physics type="ode">
       <real_time_update_rate>1000</real_time_update_rate>
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>

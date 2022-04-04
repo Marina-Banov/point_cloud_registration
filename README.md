@@ -1,5 +1,5 @@
 # point_cloud_registration
-This Python package uses a Turtlebot3 robot with an Intel Realsense D435i depth camera and tries to create point clouds of Gazebo environments.
+This Python package uses a TurtleBot3 robot with an Intel Realsense D435i depth camera and tries to create point clouds of Gazebo environments.
 
 ## Installation
 ### Ubuntu 20.0.4, ROS2 Foxy distro
@@ -9,7 +9,7 @@ sudo apt install ros-foxy-gazebo-* ros-foxy-cartographer ros-foxy-cartographer-r
 source ~/.bashrc
 ```
 
-Install Turtlebot3
+Install TurtleBot3
 ```
 sudo apt install ros-foxy-dynamixel-sdk ros-foxy-turtlebot3-msgs ros-foxy-turtlebot3 ros-foxy-turtlebot3-gazebo
 echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
@@ -81,7 +81,7 @@ pip install open3d transformations
 colcon build && . install/setup.bash
 ```
 
-The launch file loads a Gazebo world, positions the Turtlebot inside of it, and opens the Rviz visualization tool.
+The launch file loads a Gazebo world, positions the TurtleBot inside of it, and opens the Rviz visualization tool.
 ```
 ros2 launch point_cloud_registration point_cloud_registration.launch.py
 ```
@@ -101,9 +101,9 @@ Open another terminal and run the following line to start the node which will as
 ros2 run point_cloud_registration get_pcd
 ```
 
-Open another terminal and run the following line to start [Turtlebot3 teleop node](https://github.com/ROBOTIS-GIT/turtlebot3/blob/foxy-devel/turtlebot3_teleop/turtlebot3_teleop/script/teleop_keyboard.py) which allows you to control the Turtlebot.
+Open another terminal and run the following line to start [TurtleBot3 teleop node](https://github.com/ROBOTIS-GIT/turtlebot3/blob/foxy-devel/turtlebot3_teleop/turtlebot3_teleop/script/teleop_keyboard.py) which allows you to control the Turtlebot.
 ```
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
-Note that the `get_pcd` node will only process **ONE** frame after the `S` or `SPACE` key is pressed. Move the Turtlebot around and watch the octomap of the environment being generated. Press `CTRL+C` inside the `get_pcd` terminal to save the point cloud.
+Note that the `get_pcd` node will only process **ONE** frame after the `S` or `SPACE` key is pressed. Move the robot around and watch the octomap of the environment being generated. Press `CTRL+C` inside the `get_pcd` terminal to save the point cloud.
 

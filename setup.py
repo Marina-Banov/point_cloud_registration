@@ -20,7 +20,7 @@ setup(
     zip_safe=True,
     maintainer="Marina-Banov",
     maintainer_email="m.banov7@gmail.com",
-    description="This package uses a Turtlebot3 robot with an Intel Realsense D435i depth camera and tries to create "
+    description="This package uses a TurtleBot3 robot with an Intel Realsense D435i depth camera and tries to create "
                 "point clouds of Gazebo environments.",
     license="TODO: License declaration",
     tests_require=["pytest"],
