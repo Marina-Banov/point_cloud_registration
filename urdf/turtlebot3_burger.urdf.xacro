@@ -193,7 +193,7 @@
     </inertial>
   </link>
 
-  <xacro:include filename="$(find simulate_realsense_d435i)/urdf/_d435.urdf.xacro" />
+  <xacro:include filename="$(find point_cloud_registration)/urdf/_d435.urdf.xacro" />
   <xacro:sensor_d435 parent="base_scan">
      <!-- <origin xyz="0.0106 0.0175 0.0125" />     NOTE set to inertial pose param from model.sdf -->
      <origin xyz="-0.025589 -0 0.179177" />   <!--  NOTE set to pose param from model.sdf -->

@@ -102,9 +102,9 @@ class GetPcdNode(Node):
         P = np.ones((pcd_data.shape[0], 4))  # add the fourth column
         P[:, :-1] = pcd_data
         
-        P = tfs.concatenate_matrices(Mt, Ms1, P.T).T
-        P = np.dot(Mr, P.T).T
-        P = np.around(np.dot(Ms2, P.T).T, 3)
+        P = tfs.concatenate_matrices(Mt, Ms1, P.T)
+        P = np.dot(Mr, P)
+        P = np.around(np.dot(Ms2, P).T, 3)
 
         # tuples are hashable objects and will cause collisions when added to a set
         new_points = list(map(lambda t: (t[0], t[1], t[2]), P))
